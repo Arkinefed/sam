@@ -14,17 +14,17 @@ $renderAudio = isset($_GET["audioFile"]);
 
     <?php if ($renderAudio) {  ?>
 
-        <audio id="audioPlayer" src="<?php echo ($_GET["audioFile"]); ?>">
-
+        <audio controls id="audioPlayer">
+            <source src="<?php echo ($_GET["audioFile"]); ?>">
+            Audio Player
         </audio>
 
-    <?php } else if ($renderVideo) { ?>
+    <?php } if ($renderVideo) { ?>
 
-        <video id="videoPlayer" src="<?php echo ($_GET["videoFile"]); ?>">
-
+        <video controls id="videoPlayer">
+            <source src="<?php echo ($_GET["videoFile"]); ?>">
+            Video Player
         </video>
-
-    <?php } else { ?>
 
     <?php } ?>
 
