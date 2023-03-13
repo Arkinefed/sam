@@ -1,8 +1,6 @@
 <?php
 $renderVideo = isset($_GET["videoFile"]);
 $renderAudio = isset($_GET["audioFile"]);
-
-
 ?>
 
 <!doctype html>

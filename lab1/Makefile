@@ -1,5 +1,5 @@
-docker_name:=lab0_test_php
-container_name:=lab0_test_container_php
+docker_name:=lab0_235846_php
+container_name:=lab0_235846_container_php
 
 docker_build:
 	echo "Prepare docker here..."
